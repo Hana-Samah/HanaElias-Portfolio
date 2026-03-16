@@ -108,35 +108,7 @@ const About = () => {
             ))}
           </ul>
 
-          {/* Tools */}
-          <div className="mt-10 max-w-3xl mx-auto lg:mx-0">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.4 }}
-              className="flex items-center gap-3 mb-5 justify-center lg:justify-start"
-            >
-              <div className="h-px flex-1 max-w-[40px] bg-gray-200" />
-              <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest">Tools I Use</h4>
-              <div className="h-px flex-1 max-w-[40px] bg-gray-200" />
-            </motion.div>
-
-            <motion.ul
-              className="flex flex-wrap justify-center lg:justify-start gap-3"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              {toolsData.map((tool, index) => (
-                <li
-                  key={index}
-                  className="flex items-center justify-center w-12 sm:w-14 aspect-square rounded-xl border border-gray-100 bg-white hover:border-purple-300 hover:shadow-md hover:-translate-y-1 transition-all duration-200"
-                >
-                  <Image src={tool} alt={`Tool ${index}`} className="w-6 sm:w-8" />
-                </li>
-              ))}
-            </motion.ul>
-          </div>
+          
         </motion.div>
       </div>
 
