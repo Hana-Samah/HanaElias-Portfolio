@@ -15,24 +15,50 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative pt-16 pb-20 px-6 lg:px-20 overflow-hidden bg-white">
-      <div className="absolute top-20 right-0 w-[30rem] h-0 rotate-[-30deg] z-[-1] shadow-[0_0_700px_15px_white]" />
+    <div
+      className="relative pt-16 pb-20 px-6 lg:px-20 overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #0f0c1a 0%, #1a1428 15%, #faf9ff 45%, #ffffff 100%)" }}
+    >
+      {/* Grid texture — نفس الفوتر */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)`,
+          backgroundSize: "48px 48px",
+        }}
+      />
+
+      {/* Ambient glow */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none"
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.2), transparent 70%)" }}
+      />
+      <div
+        className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none"
+        style={{ background: "linear-gradient(to top, #ffffff, transparent)" }}
+      />
 
       <div className="relative z-10 max-w-2xl text-center lg:text-left py-10 lg:py-32">
-        <p data-aos="fade-up" className="text-base sm:text-lg text-gray-600 mb-2 tracking-wide">
-          👋Hi everyone, I’m
+        <p data-aos="fade-up" className="text-base sm:text-lg text-gray-300 mb-2 tracking-wide">
+          👋Hi everyone, I'm
         </p>
-        <h1 data-aos="fade-up" data-aos-delay="100" className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow text-black">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow text-white"
+          style={{ fontFamily: "'Georgia', serif" }}
+        >
           Hana Samah<br />
-          <span className="text-purple-600">Tech-Savvy Developer</span>
+          <span className="text-violet-400">Tech-Savvy Developer</span>
         </h1>
-        <p data-aos="fade-up" data-aos-delay="200" className="text-sm sm:text-base md:text-lg text-gray-600 mb-8 leading-relaxed description-text">
-          I’m a passionate tech enthusiast and developer. Explore my work, skills,
-          and the projects I’m proud of in this interactive portfolio.
+        <p data-aos="fade-up" data-aos-delay="200" className="text-sm sm:text-base md:text-lg text-gray-400 mb-8 leading-relaxed description-text">
+          I'm a passionate tech enthusiast and developer. Explore my work, skills,
+          and the projects I'm proud of in this interactive portfolio.
         </p>
 
         <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a href="/HANA SAMAH.pdf" target="_blank" rel="noopener noreferrer" className="flex px-10 py-3  justify-center rounded-full items-center btn-gradient text-black hover:text-purple-900 transform hover:scale-105 active:scale-95 transition duration-300">
+          <a href="/HANA SAMAH.pdf" target="_blank" rel="noopener noreferrer" className="flex px-10 py-3 justify-center rounded-full items-center btn-gradient text-black hover:text-purple-900 transform hover:scale-105 active:scale-95 transition duration-300">
             Download CV <Image src={assets.download_icon} className='w-4 h-4'/>
           </a>
           <a href="#contact" className="btn-gradient-secondary text-white hover:text-purple-600 transform hover:scale-105 active:scale-95 transition duration-300">

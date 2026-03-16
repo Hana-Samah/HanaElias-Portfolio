@@ -9,7 +9,6 @@ import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
-import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
 import logo_dark from "./logo_dark.png";
@@ -65,7 +64,6 @@ export const assets = {
   firebase,
   figma,
   git,
-  mongodb,
   right_arrow_white,
   logo,
   logo_dark,
@@ -166,7 +164,6 @@ export const infoList = [
 
 export const toolsData = [
   assets.vscode,
-  assets.mongodb,
   assets.figma,
   assets.git,
 ];
@@ -228,14 +225,14 @@ export const projectsData = [
     tools: ["Unity", "C#"],
   },
   {
-    title: "Autism Support App",
+    title: "Linoo - Autism Support App",
     description: "Mobile app with communication tools for children.",
     // أضيفي هذا الحقل الجديد "details"
     details:
-      "A high-impact, cross-platform mobile application developed using React Native, meticulously designed to support Arabic-speaking children with autism spectrum disorder (ASD) and their caregivers. This specialized tool addresses key communication barriers by integrating essential features: Picture Exchange Communication System (PECS) boards, interactive Social Stories for daily task sequencing, and a comprehensive resource hub tailored for parental guidance. The project has successfully completed its detailed design phase in Figma and is currently advancing through active development and implementation, targeting immediate delivery to the user community.",
+      "A high-impact, cross-platform mobile application developed using React Native and Expo, carefully designed to support Arabic-speaking children with Autism Spectrum Disorder (ASD) and their caregivers. This specialized tool addresses key communication barriers by integrating essential features, including Picture Exchange Communication System (PECS) boards, interactive Social Stories for daily task sequencing, and a comprehensive resource hub tailored to support and guide parents. The project has been successfully completed.",
     bgImage: assets.app_img,
-    link: "https://www.figma.com/design/PXSTA7DzGzeSNDbgQhs1oz/Untitled?node-id=0-1&t=LMhnzXzN3n7829Uw-1",
-    tools: ["React Native"],
+    link: "https://expo.dev/accounts/hanasamah/projects/linoo/builds/f4344689-4488-4c98-b6c8-ddcc8e252a97",
+    tools: ["React Native", "Expo", "Figma"],
   },
   {
     title: "Hotel Management System",
